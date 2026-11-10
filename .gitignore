@@ -1,0 +1,6 @@
+paysim_features.csv
+PS_20174392719_1491204439457_log.csv
+*.pkl
+resultats_fraudes.csv
+__pycache__/
+*.pyc
