@@ -565,7 +565,9 @@ if submitted:
     import joblib
     import pandas as pd
 
-    model = joblib.load("C:/Users/Lenovo/MoneticFlow/random_forest_fraud.pkl")
+    from pathlib import Path
+    BASE_DIR = Path(__file__).parent
+    model = joblib.load(BASE_DIR / "random_forest_fraud.pkl")
 
     features = pd.DataFrame([{
         'step': step,
