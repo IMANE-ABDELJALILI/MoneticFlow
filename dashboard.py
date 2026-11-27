@@ -200,7 +200,7 @@ html, body, [data-testid="stAppViewContainer"] {
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/Lenovo/MoneticFlow/resultats_fraudes.csv")
+    df = pd.read_csv("resultats_fraudes.csv")
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     df['index_num'] = range(len(df))
     return df
